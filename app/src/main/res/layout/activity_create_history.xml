@@ -63,8 +63,8 @@
             android:layout_height="45dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:inputType="number"
             android:hint="Số tiền (vnd)"
+            android:inputType="number"
             android:paddingStart="10dp" />
 
         <TextView
@@ -82,6 +82,7 @@
             android:id="@+id/create_history_category"
             android:layout_below="@+id/create_history_account_err"
             android:layout_width="350dp"
+            android:background="@drawable/dr_round_input_b"
             android:layout_centerHorizontal="true"
             android:layout_height="45dp"
             />

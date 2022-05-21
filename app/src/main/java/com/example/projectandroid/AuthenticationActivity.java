@@ -15,11 +15,6 @@ public class AuthenticationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_authenication);
-        findViewById(R.id.sql).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-            }
-        });
         findViewById(R.id.buttonLogin).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
