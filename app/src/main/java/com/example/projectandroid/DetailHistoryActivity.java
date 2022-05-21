@@ -162,19 +162,18 @@ public class DetailHistoryActivity extends AppCompatActivity {
                 AlertDialog.Builder dialog = new AlertDialog.Builder(DetailHistoryActivity.this);
                 dialog.setTitle("Bạn có chắc muốn xóa không ? ");
                 dialog.setMessage("Sau khi xóa số tiền đã chi tiêu sẽ được cộng vào số dư ");
-                dialog.setPositiveButton("Đóng", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-
-                    }
-                });
-                dialog.setNegativeButton("Đồng ý", new DialogInterface.OnClickListener() {
+                dialog.setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         Long refundAccount = originAccount + finalCurPayment;
                         updateProfile(refundAccount, viewPreferences("profile_phone"));
                         delete(finalHistoryId);
                         startActivity(new Intent(DetailHistoryActivity.this, DrawerActivity.class));
+                    }
+                });
+                dialog.setNegativeButton("Đóng", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
 
                     }
                 });
