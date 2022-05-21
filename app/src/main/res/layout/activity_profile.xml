@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1DFDE"
+    tools:context=".ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/im_cheems_bg2" />
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/dr_white_bg">
+
+        <LinearLayout
+            android:id="@+id/linear_my_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/my_profile_name"
+                android:layout_width="330dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:drawableStart="@drawable/ic_baseline_account_circle_24"
+                android:drawablePadding="5dp"
+                android:hint="Họ và Tên"
+                android:paddingStart="15dp" />
+
+            <TextView
+                android:id="@+id/my_profile_name_err"
+                style="@style/errStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="vui lòng nhập tên"
+                android:textAlignment="center" />
+
+            <RadioGroup
+                android:id="@+id/my_profile_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:checkedButton="@+id/my_profile_gender_nam"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/my_profile_gender_nam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="80dp"
+                    android:text="Nam" />
+
+                <RadioButton
+                    android:id="@+id/my_profile_gender_nu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nữ" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/my_profile_birthDate"
+                android:layout_width="330dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_baseline_date_range_24"
+                android:drawablePadding="5dp"
+                android:focusable="false"
+                android:hint="Ngày sinh"
+                android:paddingStart="15dp" />
+
+            <TextView
+                android:id="@+id/my_profile_birthDate_err"
+                style="@style/errStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="vui lòng nhập ngày sinh"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/my_profile_address"
+                android:layout_width="330dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:drawableStart="@drawable/ic_baseline_location_on_24"
+                android:drawablePadding="5dp"
+                android:hint="Địa chỉ"
+                android:maxHeight="100dp"
+                android:minHeight="45dp"
+                android:paddingStart="15dp" />
+
+            <TextView
+                android:id="@+id/my_profile_address_err"
+                style="@style/errStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="vui lòng nhập địa chỉ"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/my_profile_job"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:drawableStart="@drawable/ic_baseline_backpack_24"
+                android:drawablePadding="5dp"
+                android:hint="Nghề nghiệp"
+                android:maxHeight="100dp"
+                android:minHeight="45dp"
+                android:paddingStart="15dp" />
+
+            <TextView
+                android:id="@+id/my_profile_job_err"
+                style="@style/errStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="vui lòng nhập nghề nghiệp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/my_profile_account"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:drawableStart="@drawable/ic_baseline_attach_money_24"
+                android:drawablePadding="5dp"
+                android:hint="Số dư"
+                android:inputType="number"
+                android:maxHeight="100dp"
+                android:minHeight="45dp"
+                android:paddingStart="15dp" />
+
+            <TextView
+                android:id="@+id/my_profile_account_err"
+                style="@style/errStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/my_profile_saveBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_my_profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/dr_round_btn_bg_blue"
+            android:text="Lưu"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

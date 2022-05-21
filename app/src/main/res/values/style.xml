@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="titleStyle">
+        <item name="android:textColor">#B113EA</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="errStyle">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="avtStyle">
+        <item name="android:radius">100dp</item>
+    </style>
+</resources>

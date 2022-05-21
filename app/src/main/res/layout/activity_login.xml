@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/im_cheems_bg"
+    >
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/dr_white_bg">
+
+        <TextView
+            android:id="@+id/login_title"
+            style="@style/titleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="ĐĂNG NHẬP" />
+
+        <EditText
+            android:id="@+id/login_phone"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/login_title"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="32dp"
+            android:drawableStart="@drawable/ic_baseline_smartphone_24"
+            android:drawablePadding="5dp"
+            android:hint="Số điện thoại"
+            android:inputType="number"
+            android:paddingStart="15dp" />
+
+        <TextView
+            android:id="@+id/login_phone_err"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_phone"
+            android:layout_centerHorizontal="true"
+            android:text="số điện thoại không được để trống"
+            android:textColor="@color/red"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/login_phone_err"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="5dp"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
+            android:paddingStart="15dp" />
+
+        <TextView
+            android:id="@+id/login_password_err"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_password"
+            android:layout_centerHorizontal="true"
+            android:text="bạn chưa nhập mật khẩu"
+            android:textColor="@color/red"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_password_err"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dr_round_btn_bg_blue"
+            android:text="Đăng nhập"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/login_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginBottom="19dp"
+            android:drawableStart="@drawable/ic_baseline_arrow_back_ios_24"
+            android:text="Trở về"
+            android:textColor="@color/purple_500"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

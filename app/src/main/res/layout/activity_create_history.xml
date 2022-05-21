@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateHistoryActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:id="@+id/create_history_account_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/red"
+            android:drawableBottom="@drawable/ic_baseline_arrow_back_ios_new_24"
+            android:textSize="20dp"
+            />
+
+        <LinearLayout
+            android:layout_below="@+id/create_history_account_back"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true">
+
+            <TextView
+                style="@style/titleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số dư: " />
+            <TextView
+                android:id="@+id/create_history_account_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="#EC1D1D"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="1250052" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="#EC1D1D"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text=".VND" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/create_history_account"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:hint="Số tiền (vnd)"
+            android:paddingStart="10dp" />
+
+        <TextView
+            android:id="@+id/create_history_account_err"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/create_history_account"
+            android:layout_centerHorizontal="true"
+            android:text="Tiền khồn được để trống"
+            android:textColor="@color/red"
+            android:textSize="12dp"
+            android:visibility="gone" />
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:id="@+id/create_history_category"
+            android:layout_below="@+id/create_history_account_err"
+            android:layout_width="350dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="45dp"
+            />
+        <TextView
+            android:id="@+id/create_history_category_err"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/create_history_category"
+            android:layout_centerHorizontal="true"
+            android:text="Tiền khồn được để trống"
+            android:textColor="@color/red"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/create_history_description"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/create_history_category_err"
+            android:clickable="true"
+            android:hint="Mô tả "
+            android:maxHeight="250dp"
+            android:minHeight="45dp"
+            android:padding="10dp" />
+        <TextView
+            android:id="@+id/create_history_description_err"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/create_history_description"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/red"
+            android:textSize="12dp"
+            android:visibility="gone" />
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Lưu"
+            android:id="@+id/create_history_btnSave"
+            android:textColor="@color/white"
+            android:background="@drawable/dr_round_btn_bg_blue"
+            android:layout_below="@+id/create_history_description_err"
+            android:layout_centerHorizontal="true"
+            />
+        
+    </RelativeLayout>
+
+</LinearLayout>

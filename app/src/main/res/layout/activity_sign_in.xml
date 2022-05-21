@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/im_cheems_bg"
+    tools:context=".SignInActivity">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/dr_white_bg">
+
+        <TextView
+            android:id="@+id/signIn_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="ĐĂNG KÝ"
+            style="@style/titleStyle"
+            />
+
+        <EditText
+            android:id="@+id/signIn_phone"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/signIn_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/ic_baseline_smartphone_24"
+            android:drawablePadding="5dp"
+            android:hint="Số điện thoại"
+            android:inputType="number"
+            android:paddingStart="15dp" />
+
+        <TextView
+            android:id="@+id/signIn_phone_err"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signIn_phone"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:text="số điện thoại không được để trống"
+            android:textColor="@color/red"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/signIn_password"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/signIn_phone_err"
+            android:layout_centerHorizontal="true"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="10dp"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
+            android:paddingStart="15dp" />
+
+        <TextView
+            android:id="@+id/signIn_password_err"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signIn_password"
+            android:layout_centerHorizontal="true"
+            android:text="bạn chưa nhập mật khẩu"
+            android:textColor="@color/red"
+            android:textSize="12dp"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:id="@+id/signIn_rePassword"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/signIn_password_err"
+            android:layout_centerHorizontal="true"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="10dp"
+            android:hint="Nhập lại mật khẩu"
+            android:inputType="textPassword"
+            android:paddingStart="15dp" />
+
+        <TextView
+            android:id="@+id/signIn_rePassword_err"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signIn_rePassword"
+            android:layout_centerHorizontal="true"
+            android:text="mật khẩu nhập lại không khớp"
+            android:textColor="@color/red"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/signIn_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signIn_rePassword_err"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dr_round_btn_bg_blue"
+            android:text="Đăng ký"
+            android:layout_marginBottom="50dp"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

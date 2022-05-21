@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout
+            android:layout_width="230dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxWidth="180dp"
+                android:textSize="20dp"
+                android:ellipsize="end"
+                android:id="@+id/list_item_category"
+                android:maxLines="2"
+                style="@style/titleStyle"
+                android:text="Lý do là do đi chợ mua thit cvề nấu canh chua"
+                />
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="180dp"
+                    android:textSize="15dp"
+                    android:ellipsize="end"
+                    android:id="@+id/list_item_description"
+                    android:maxLines="2"
+                    android:text="Lý do là do đi chợ mua thit cvề nấu canh chua"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/list_item_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="20dp"
+                    android:text="10000000dd00d"
+                    android:fontFamily="sans-serif-condensed-medium"
+
+                    />
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/list_item_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ngày tháng"
+                    />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+</RelativeLayout>
